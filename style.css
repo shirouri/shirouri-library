@@ -1,9 +1,33 @@
 h1 {
-    color: white;
-    background-color: black;
-    text-align: center;
+    color: black;
+    background-color: rgb(119, 245, 119);
+    text-align: left;
     margin-top: 0px;
 }
+
+ul {
+    list-style:none;
+}
+div {
+    padding: 0 30px;
+}
+
+.header_flex {
+    display: flex;
+    height:60px;
+    align-items: center;
+}
+.header_flex nav {
+    margin-left: auto;
+}
+.header_flex ul {
+    display: flex;
+}
+.header_flex ul li {
+    margin-left: 20px;
+}
+
 .dog {
     color: blue;
 }
+

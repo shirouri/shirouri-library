@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>しろうり図書館</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script type="text/javascript" src="index.js"></script>
-  </head>
+    <head>
+        <div class="header_flex">
+            <h1>しろうり図書館</h1>
+            <nav>
+                <ul>
+                    <li>Topics</li>
+                    <li>Gallery</li>
+                    <li>Profile</li>
+                </ul>
+            </nav>
+        </div>
+
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+
+    <hr size="10">
 
   <body>
-    <h1>しろうり図書館</h1>
-    <h2>ニュース</h2>
-    <p>最新作を鋭意作成中！！！！！</p>
-    <h3>作品一覧</h3>
+    <h2>topics</h2>
+    <div className="bg-white p-6 rounded-lg shadow-md">
+        <p className="font-noto-sans">最新のトピックスがここに表示されます</p>
+    </div>
+    <!-- <p>新作を鋭意執筆中！！</p>
+    <p>2024.11.08 「しろうり図書館」開館</p> -->
+    <h3>gallery</h3>
     <ul>
       <li class="dog">シバイヌ</li>
       <li>オオカミ</li>
       <li>ホッキョクギツネ</li>
     </ul>
+    <h3>profile</h3>
+    <p>1997年5月1日生まれ。福岡県嘉麻市で育つ。
+        <br>小説が好き。</br>
+    </p>
+    <h5>今月のおすすめ</h5>
   </body>
 </html>
