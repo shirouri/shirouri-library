@@ -1,4 +1,68 @@
-h1 {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-right: 25px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-list {
+    height: 200px;
+    overflow-y: scroll;
+    margin: auto;
+    padding: 0 1.5em;
+    border: 1px solid #ccc;
+    line-height: 1.3;
+    color: #444;
+    overflow: auto;
+    width: 90%;
+    height: 12em;
+}
+
+.news-list dl {
+    border-bottom: 1px solid #ccc;
+}
+
+.news-list dt {
+    padding-bottom: 0;
+    width: 7em;
+    float: left;
+}
+
+.news-list dd {
+    margin-left: 0.5em;
+}
+
+/* @media screen and (min-width: 480px) {
+    .news dt {
+        clear: left;
+        float: left;
+    }
+    .news dd {
+        margin-left: 0.5em;
+    }
+} */
+
+
+/* h1 {
     color: black;
     background-color: rgb(119, 245, 119);
     text-align: left;
@@ -30,4 +94,4 @@ div {
 .dog {
     color: blue;
 }
-
+ */
