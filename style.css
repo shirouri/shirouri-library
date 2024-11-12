@@ -66,6 +66,7 @@
 }
 
 .work {
+    width: calc( 100% / 3 );
     border: 1px solid lightgray;
     border-radius: 10px;
 }
@@ -75,35 +76,29 @@
     margin-left: 10px;
   }
 
-.picture img {
-    width: 60%;
-    height: 60%;
+.picture-var img {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 150px;
+}
+
+.picture-hor img {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: 50px;
+    left: 28px;
 }
 
 .title {
     font-weight: bold;
 }
 
-/* div {
-    padding: 0 30px;
+.main-text {
+    display: -webkit-box;
+    line-clamp: 3; /* 互換性のために記載 */
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
-
-.header_flex {
-    display: flex;
-    height:60px;
-    align-items: center;
-}
-.header_flex nav {
-    margin-left: auto;
-}
-.header_flex ul {
-    display: flex;
-}
-.header_flex ul li {
-    margin-left: 20px;
-}
-
-.dog {
-    color: blue;
-}
- */ */

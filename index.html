@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="index.js"></script>
+    <!-- Lightbox2用CSS（画像拡大） -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <title>しろうり図書館</title>
 </head>
 <body>
@@ -23,6 +25,7 @@
 <main>
     <h2 class="news">news</h2>
     <div class="news-list">
+        <dl><dt>2024/11/12</dt><dd>画像拡大機能を追加しました。</dd></dl>
         <dl><dt>2024/11/11</dt><dd>gallery欄を追加しました。</dd></dl>
         <dl><dt>2024/11/11</dt><dd>news欄を追加しました。</dd></dl>
         <dl><dt>2024/11/11</dt><dd>新作を鋭意執筆中！！</dd></dl>
@@ -33,7 +36,7 @@
         <div class="work">
             <div class="text">
                 <p class="title">いぬ、家出する</p>
-                <p>
+                <p class="main-text">
                     だいずは怒り狂いました。<br>
                     （耄碌じじいめ！もう出てってやる！）<br>
                     とはいえ目ぼしい家出先などありません。<br>
@@ -47,23 +50,31 @@
                     宇宙にいる事など気付かないままでした。
                 </p>
             </div>
-            <div class="picture"><img src="images/01_shibainu.jpeg" alt="" /></div>
+            <div class="picture-var">
+                <a href="images/01_shibainu.jpeg" data-lightbox="shibainu">
+                    <img src="images/01_shibainu.jpeg" alt="" />
+                </a>
+            </div>
         </div>
         <div class="work">
             <div class="text">
                 <p class="title">ラスト・ウルフ</p>
-                <p>
+                <p class="main-text">
                     気がつくと、彼は山を駆けていました。<br>
                     旧友の背を追い、辿り着いたのはかつての住処。<br>
                     その瞼には、愛する家族の姿が、はっきりと浮かんでいました。
                 </p>
             </div>
-            <div class="picture"><img src="images/02_ōkami.jpeg" alt="" /></div>
+            <div class="picture-var">
+                <a href="images/02_ōkami.jpeg" data-lightbox="ōkami">
+                    <img src="images/02_ōkami.jpeg" alt="" />
+                </a>
+            </div>
         </div>
         <div class="work">
             <div class="text">
                 <p class="title">ホッキョクギツネとナツ</p>
-                <p>
+                <p class="main-text">
                     （ナッちゃん！これは雪だ！）<br>
                     フユはテーブルの前で大はしゃぎです。<br>
                     「お、やっぱわかるよね。どお？かき氷。懐かしいんじゃない？」<br>
@@ -72,7 +83,11 @@
                     「うわっ、ヨダレは予想外。でもこれあげられないからね。」
                 </p>
             </div>
-            <div class="picture"><img src="images/03_hokkyokugitune.jpeg" alt="" /></div>
+            <div class="picture-hor">
+                <a href="images/03_hokkyokugitune.jpeg" data-lightbox="hokkyokugitune">
+                    <img src="images/03_hokkyokugitune.jpeg" alt="" />
+                </a>
+            </div>
         </div>
     </div>
     <!-- <ul>
@@ -89,6 +104,9 @@
 <footer>
 
 </footer>
+    <!-- jQueryスクリプト、Lightbox2本体スクリプト（画像拡大） -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 </body>
 </html>
 
