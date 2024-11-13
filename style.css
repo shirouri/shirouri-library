@@ -62,7 +62,7 @@
 .works {
     display: flex;
     justify-content: center;
-    @media (max-width: 1000px) {
+    @media (max-width: 1500px) {
         flex-direction: column;
     }
     
