@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: greenyellow;
 }
 
 .nav ul li {
@@ -100,7 +100,7 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
 
     .works {
         width: 80%;
