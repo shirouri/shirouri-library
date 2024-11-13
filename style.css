@@ -17,7 +17,7 @@
 .nav ul li a {
     color: #000;
     text-decoration: none;
-  }
+}
 
 .news {
     display: flex;
@@ -60,38 +60,30 @@
 }
 
 .works {
-    display: flex;
-    justify-content: center;
-    @media (max-width: 1500px) {
-        flex-direction: column;
-    }
-    
+    width: 800px;
+    margin: auto;
 }
 
 .work {
-    width: calc( 100% / 3 );
-    border: 1px solid lightgray;
-    border-radius: 10px;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    /* border: 1px solid lightgray;
+    border-radius: 10px; */
 }
 
-.work:nth-child(2) {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
 .picture-var img {
-    width: 40%;
-    height: 40%;
-    position: relative;
-    left: 150px;
+    width: 350px;
+    height: 100%;
+    /* position: relative;
+    left: 150px; */
 }
 
 .picture-hor img {
-    width: 90%;
-    height: 90%;
+    width: 450px;
+    height: 60%;
     position: relative;
-    top: 50px;
-    left: 28px;
+    top: 120px;
 }
 
 .title {
@@ -99,9 +91,50 @@
 }
 
 .main-text {
+    /* width: 350px; */
     display: -webkit-box;
-    line-clamp: 3; /* 互換性のために記載 */
-    -webkit-line-clamp: 3;
+    line-clamp: 50;
+    /* 互換性のために記載 */
+    -webkit-line-clamp: 50;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+
+    .works {
+        width: 80%;
+        margin: auto;
+    }
+
+    .work-odd {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .work-even {
+        flex-direction: column-reverse;
+        text-align: left;
+        margin-top: 525px;
+    }
+
+    .picture-hor img {
+        width: 450px;
+        height: 100px;
+    }
+
+    .text {
+        width: 400px;
+    }
+
+    .main-text {
+        /* width: 350px; */
+        display: -webkit-box;
+        line-clamp: 50;
+        /* 互換性のために記載 */
+        -webkit-line-clamp: 50;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
 }
