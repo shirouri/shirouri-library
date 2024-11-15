@@ -1,3 +1,9 @@
+a.anchor {
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -6,7 +12,6 @@
 }
 
 .header img {
-    position: absolute;
     top: 0;
 	left: 0;
 	width: 100%;
@@ -15,27 +20,42 @@
 	margin: 0;
 }
 
+/* スクリーントーンのカバー */
+.header::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.3) radial-gradient(rgba(0,0,0,.3) 25%, transparent 0) center / 5px 5px;
+}
+
 .logo {
     position: absolute;
+    z-index: 1;
 }
 
 .logo h1 {
     margin-top: 0px;
     margin-left: 10px;
-    color: #ccc;
+    color: #fff;
     -webkit-text-stroke: 1px #000;
 }
 
-.logo h4 {
+.logo p {
     margin-top: 10px;
     margin-bottom: 0px;
     margin-left: 5px;
-    color: #000;
+    color: #fff;
 }
 
 .nav {
     position: absolute;
-    left: 1750px;
+    z-index: 1;
+    right: 1em;
+	top: 0.5em;
 }
 
 .nav ul li {
@@ -48,7 +68,7 @@
 }
 
 .nav ul li a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -133,6 +153,36 @@
     overflow: hidden;
 }
 
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-rec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book img {
+    max-width: 240px;
+    max-height: 240px;
+    
+}
+
 @media screen and (max-width: 1200px) {
 
     .works {
@@ -169,5 +219,4 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
-
 }

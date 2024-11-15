@@ -14,21 +14,30 @@
     <header class="header">
         <img src="images/forest.jpg" alt="" />
         <div class="logo">
-            <h4>本好き館長の作品集</h4>
+            <p>本好き館長の作品集</p>
             <h1>しろうり図書館</h1>
         </div>
         <nav class="nav">
             <ul>
                 <li><a href="index.html">home</a></li>
-                <li><a href="topix.html">news</a></li>
-                <li><a href="gallery.html">gallery</a></li>
-                <li><a href="profile.html">profile</a></li>
+                <li><a href="#news">news</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#profile">profile</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <a id="news" class="anchor"></a>
         <h2 class="news">news</h2>
         <div class="news-list">
+            <dl>
+                <dt>2024/11/15</dt>
+                <dd>今月のおすすめ情報を追加しました。</dd>
+            </dl>
+            <dl>
+                <dt>2024/11/15</dt>
+                <dd>ヘッダー画像を追加しました。</dd>
+            </dl>
             <dl>
                 <dt>2024/11/12</dt>
                 <dd>画像拡大機能を追加しました。</dd>
@@ -50,6 +59,7 @@
                 <dd>しろうり図書館を開館しました。</dd>
             </dl>
         </div>
+        <a id="gallery" class="anchor"></a>
         <h2 class="gallery">gallery</h2>
         <div class="works">
             <div class="work work-odd">
@@ -111,11 +121,17 @@
                 </div>
             </div>
         </div>
-        <h2>profile</h2>
-        <p>1997年5月1日生まれ。福岡県嘉麻市出身。
+        <a id="profile" class="anchor"></a>
+        <h2 class="profile">profile</h2>
+        <p class="profile-text">1997年5月1日生まれ。福岡県嘉麻市出身。
             <br>小説が好き。</br>
         </p>
-        <h5>今月のおすすめ</h5>
+        <h4 class="profile-rec">今月のおすすめ</h4>
+        <div class="book">
+            <a href="https://www.amazon.co.jp/dp/product/410129772X/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=410129772X&ie=UTF8&linkCode=as2" target="_blank" >
+                <img alt="卵の緒 (新潮文庫)" src="https://m.media-amazon.com/images/I/41IqMHgwHfL._SL500_.jpg">
+            </a>
+        </div>
     </main>
     <footer>
 
@@ -125,4 +141,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
         type="text/javascript"></script>
 </body>
+
 </html>
