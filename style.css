@@ -13,23 +13,23 @@ a.anchor {
 
 .header img {
     top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-	margin: 0;
+    margin: 0;
 }
 
 /* スクリーントーンのカバー */
 .header::after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,.3) radial-gradient(rgba(0,0,0,.3) 25%, transparent 0) center / 5px 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3) radial-gradient(rgba(0, 0, 0, .3) 25%, transparent 0) center / 5px 5px;
 }
 
 .logo {
@@ -54,7 +54,7 @@ a.anchor {
     position: absolute;
     z-index: 1;
     right: 1em;
-	top: 0.5em;
+    top: 0.5em;
 }
 
 .nav ul li {
@@ -112,42 +112,48 @@ a.anchor {
 }
 
 .works {
-    width: 800px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .work {
-    width: 1000px;
-    height: 600px;
-    display: flex;
-    /* border: 1px solid lightgray;
-    border-radius: 10px; */
+    width: 400px;
+    height: 500px;
+    /* display: flex; */
+    border: 1px solid lightgray;
+    border-radius: 10px;
 }
 
-.picture-var img {
+.work:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.picture img {
     width: 350px;
     height: 100%;
-    /* position: relative;
-    left: 150px; */
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
-.picture-hor img {
-    width: 450px;
-    height: 60%;
-    position: relative;
-    top: 120px;
+.category {
+    margin-left: 5px;
 }
 
 .title {
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .main-text {
-    /* width: 350px; */
+    width: 380px;
+    height: 120px;
+    margin-top: 0px;
+    margin-left: 15px;
     display: -webkit-box;
-    line-clamp: 50;
     /* 互換性のために記載 */
-    -webkit-line-clamp: 50;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -179,30 +185,20 @@ a.anchor {
 .book img {
     max-width: 240px;
     max-height: 240px;
-    
+
 }
 
 @media screen and (max-width: 1200px) {
 
     .works {
+        display: block;
         width: 80%;
         margin: auto;
     }
 
-    .work-odd {
-        flex-direction: column;
-        text-align: left;
-    }
-
-    .work-even {
-        flex-direction: column-reverse;
-        text-align: left;
-        margin-top: 525px;
-    }
-
-    .picture-hor img {
-        width: 450px;
-        height: 100px;
+    .picture img {
+        width: 350px;
+        height: 100%;
     }
 
     .text {
