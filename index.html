@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- Lightbox2用CSS（画像拡大） -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <title>しろうり図書館</title>
@@ -12,7 +15,7 @@
 
 <body>
     <header class="header">
-        <img src="images/forest.jpg" alt="" />
+        <img src="images/forest2.jpeg" alt="" />
         <div class="logo">
             <p>本好き館長の作品集</p>
             <h1>しろうり図書館</h1>
@@ -23,6 +26,16 @@
                 <li><a href="#news">news</a></li>
                 <li><a href="#gallery">gallery</a></li>
                 <li><a href="#profile">profile</a></li>
+            </ul>
+        </nav>
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <nav class="burger_nav_content">
+            <ul class="burger_nav_list">
+                <li class="burger_nav_item"><a href="index.html">home</a></li>
+                <li class="burger_nav_item"><a href="#news">news</a></li>
+                <li class="burger_nav_item"><a href="#gallery">gallery</a></li>
+                <li class="burger_nav_item"><a href="#profile">profile</a></li>
             </ul>
         </nav>
     </header>
